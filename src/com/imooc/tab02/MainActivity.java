@@ -65,8 +65,8 @@ public class MainActivity extends FragmentActivity implements OnClickListener
 		FragmentManager fm = getSupportFragmentManager();
 		FragmentTransaction transaction = fm.beginTransaction();
 		hideFragment(transaction);
-		// °ÑÍ¼Æ¬ÉèÖÃÎªÁÁµÄ
-		// ÉèÖÃÄÚÈİÇøÓò
+		// æŠŠå›¾ç‰‡è®¾ç½®ä¸ºäº®çš„
+		// è®¾ç½®å†…å®¹åŒºåŸŸ
 		switch (i)
 		{
 		case 0:
@@ -166,7 +166,7 @@ public class MainActivity extends FragmentActivity implements OnClickListener
 	}
 
 	/**
-	 * ÇĞ»»Í¼Æ¬ÖÁ°µÉ«
+	 * åˆ‡æ¢å›¾ç‰‡è‡³æš—è‰²
 	 */
 	private void resetImgs()
 	{
