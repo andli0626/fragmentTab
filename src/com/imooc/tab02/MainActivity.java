@@ -33,7 +33,9 @@ public class MainActivity extends FragmentActivity implements OnClickListener
 	{
 		super.onCreate(savedInstanceState);
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
+		
 		setContentView(R.layout.activity_main);
+		
 		initView();
 		initEvent();
 		setSelect(0);
@@ -41,23 +43,23 @@ public class MainActivity extends FragmentActivity implements OnClickListener
 
 	private void initEvent()
 	{
-		mTabWeixin.setOnClickListener(this);
-		mTabFrd.setOnClickListener(this);
-		mTabAddress.setOnClickListener(this);
+		mTabWeixin	.setOnClickListener(this);
+		mTabFrd		.setOnClickListener(this);
+		mTabAddress	.setOnClickListener(this);
 		mTabSettings.setOnClickListener(this);
 	}
 
 	private void initView()
 	{
-		mTabWeixin = (LinearLayout) findViewById(R.id.id_tab_weixin);
-		mTabFrd = (LinearLayout) findViewById(R.id.id_tab_frd);
-		mTabAddress = (LinearLayout) findViewById(R.id.id_tab_address);
-		mTabSettings = (LinearLayout) findViewById(R.id.id_tab_settings);
+		mTabWeixin 		= (LinearLayout) findViewById(R.id.id_tab_weixin);
+		mTabFrd 		= (LinearLayout) findViewById(R.id.id_tab_frd);
+		mTabAddress 	= (LinearLayout) findViewById(R.id.id_tab_address);
+		mTabSettings 	= (LinearLayout) findViewById(R.id.id_tab_settings);
 
-		mImgWeixin = (ImageButton) findViewById(R.id.id_tab_weixin_img);
-		mImgFrd = (ImageButton) findViewById(R.id.id_tab_frd_img);
-		mImgAddress = (ImageButton) findViewById(R.id.id_tab_address_img);
-		mImgSettings = (ImageButton) findViewById(R.id.id_tab_settings_img);
+		mImgWeixin 		= (ImageButton) findViewById(R.id.id_tab_weixin_img);
+		mImgFrd 		= (ImageButton) findViewById(R.id.id_tab_frd_img);
+		mImgAddress 	= (ImageButton) findViewById(R.id.id_tab_address_img);
+		mImgSettings 	= (ImageButton) findViewById(R.id.id_tab_settings_img);
 	}
 
 	private void setSelect(int i)
@@ -87,7 +89,6 @@ public class MainActivity extends FragmentActivity implements OnClickListener
 			} else
 			{
 				transaction.show(mTab02);
-				
 			}
 			mImgFrd.setImageResource(R.drawable.tab_find_frd_pressed);
 			break;
@@ -165,14 +166,12 @@ public class MainActivity extends FragmentActivity implements OnClickListener
 		}
 	}
 
-	/**
-	 * 切换图片至暗色
-	 */
+	// 切换图片至暗色
 	private void resetImgs()
 	{
-		mImgWeixin.setImageResource(R.drawable.tab_weixin_normal);
-		mImgFrd.setImageResource(R.drawable.tab_find_frd_normal);
-		mImgAddress.setImageResource(R.drawable.tab_address_normal);
+		mImgWeixin	.setImageResource(R.drawable.tab_weixin_normal);
+		mImgFrd		.setImageResource(R.drawable.tab_find_frd_normal);
+		mImgAddress	.setImageResource(R.drawable.tab_address_normal);
 		mImgSettings.setImageResource(R.drawable.tab_settings_normal);
 	}
 
